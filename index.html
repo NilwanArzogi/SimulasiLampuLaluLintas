@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulasi Lampu Lalu Lintas</title>
+  <link rel="icon" href="gambar.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <h1>Simulasi Lampu Lalu Lintas</h1>
+
+  <div class="traffic-light">
+    <div class="light red"></div>
+    <div class="light yellow"></div>
+    <div class="light green"></div>
+  </div>
+
+  <p id="status-text" style="font-weight:bold; font-size: 18px;"></p>
+
+  <p>Timer: <span id="timer">0</span></p>
+
+  <div id="car" style="position: relative; left: 0; transition: 0.5s;">
+    <img src="car.png" alt="Mobil" width="100">
+  </div>
+
+  <button id="next">Ganti Lampu</button>
+  <button onclick="toggleAuto()">Auto Mode</button>
+  <button onclick="startCountdown()">Countdown</button>
+  <button onclick="toggleNightMode()">Night Mode</button>
+  <button onclick="emergencyMode()">Emergency</button>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

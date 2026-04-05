@@ -1,0 +1,85 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #d6d6d6;
+  padding: 50px;
+  color: #000;
+}
+
+.traffic-light {
+  width: 100px;
+  background-color: #222;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 30px auto;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.light {
+  width: 60px;
+  height: 60px;
+  margin: 15px auto;
+  border-radius: 50%;
+  background-color: #111;
+  opacity: 0.3;
+  transition: all 0.4s ease;
+}
+
+.light.active {
+  opacity: 1;
+}
+
+.red.active {
+  background-color: #ff2d2d;
+  box-shadow: 0 0 20px #ff2d2d, 0 0 40px #ff0000;
+}
+
+.yellow.active {
+  background-color: #ffd633;
+  box-shadow: 0 0 20px #ffd633, 0 0 40px #ffcc00;
+}
+
+.green.active {
+  background-color: #33ff77;
+  box-shadow: 0 0 20px #33ff77, 0 0 40px #00cc44;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #333;
+  color: white;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#timer {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#car {
+  margin-top: 20px;
+  font-size: 30px;
+  position: relative;
+  left: 0;
+  transition: left 1s ease;
+}
+
+@media (max-width: 600px) {
+  .traffic-light {
+    width: 80px;
+  }
+
+  .light {
+    width: 50px;
+    height: 50px;
+  }
+}
